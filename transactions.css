@@ -1,0 +1,105 @@
+/* transactions.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Match the main body background */
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-options a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.layout {
+    display: flex; /* Flexbox for layout */
+}
+
+.sidebar {
+    width: 200px; /* Fixed width for sidebar */
+    background-color: #2c3e50; /* Sidebar color */
+    height: 100vh; /* Full height */
+    padding: 20px; /* Padding for sidebar */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar a {
+    display: block; /* Block display for links */
+    color: white; /* Link color */
+    padding: 10px 15px; /* Padding for links */
+    text-decoration: none; /* Remove underline */
+    margin-bottom: 10px; /* Space between links */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.sidebar a:hover {
+    background-color: #34495e; /* Hover effect for links */
+}
+
+.content {
+    flex: 1; /* Take remaining space */
+    padding: 20px; /* Padding for content area */
+    background-color: white; /* Content background color */
+}
+
+/* Table Styles */
+table {
+    width: 100%; /* Full width table */
+    border-collapse: collapse; /* Collapse borders */
+}
+
+table, th, td {
+    border: 1px solid #ddd; /* Border styling */
+}
+
+th, td {
+    padding: 12px; /* Padding for table cells */
+}
+
+thead {
+    background-color: #4CAF50; /* Header background color */
+    color: white; /* Header text color */
+}
+
+/* Export Buttons Styling */
+.export-buttons {
+    margin-top: 20px; /* Space above buttons */
+}
+
+.export-buttons form {
+   display:inline; 
+}
+.toggle-buttons {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the buttons */
+    margin-bottom: 20px; /* Space below the toggle buttons */
+}
+
+.toggle-buttons a {
+    background-color: #007bff; /* Default background color */
+    color: white; /* Text color */
+    padding: 10px 15px; /* Padding for buttons */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    margin: 0 5px; /* Space between buttons */
+    transition: background-color 0.3s, transform 0.2s; /* Transition effects */
+}
+
+.toggle-buttons a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.toggle-buttons a.active {
+    background-color: #28a745; /* Green background for active button */
+}

@@ -1,0 +1,124 @@
+/* report.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Match the main body background */
+    margin: 0; /* Remove default margin */
+}
+
+.top-nav {
+    background-color: #333; /* Dark background for top nav */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center items vertically */
+}
+
+.nav-options a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav-options a:hover {
+    color: #4CAF50; /* Change color on hover */
+}
+
+.layout {
+    display: flex; /* Flexbox for layout */
+}
+
+.sidebar {
+    width: 200px; /* Fixed width for sidebar */
+    background-color: #2c3e50; /* Sidebar color */
+    height: 100vh; /* Full height */
+    padding: 20px; /* Padding for sidebar */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.sidebar a {
+    display: block; /* Block display for links */
+    color: white; /* Link color */
+    padding: 10px 15px; /* Padding for links */
+    text-decoration: none; /* Remove underline */
+    margin-bottom: 10px; /* Space between links */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.sidebar a:hover {
+    background-color: #34495e; /* Hover effect for links */
+}
+
+.content {
+    flex-grow: 1; /* Take remaining space in layout */
+    padding: 20px; /* Padding for content area */
+    background-color: white; /* Content area background color */
+}
+
+/* General Table Styles */
+table {
+   width: 100%; 
+   border-collapse: collapse;
+   margin-top: 20px; /* Space above the table */
+}
+table, th, td {
+   border: 1px solid #ddd;
+}
+th, td {
+   padding: 12px;
+   text-align: left; /* Align text to the left for better readability */
+}
+thead {
+   background-color:#4CAF50; /* Header background color */
+   color:white; /* Header text color */
+}
+
+/* Row hover effect for better UX */
+tbody tr:hover {
+   background-color: #f2f2f2; /* Light gray on row hover */
+}
+
+/* Export Buttons Styling */
+.export-buttons {
+   margin-top:20px;
+   display: flex;
+   justify-content: flex-start; /* Align buttons to the left */
+}
+
+.export-buttons form {
+   display:inline-block;
+   margin-right: 10px; /* Space between buttons */
+}
+
+.export-buttons button {
+   background-color: #007bff; /* Primary button color (Bootstrap blue) */
+   color: white;
+   border: none;
+   padding: 10px 15px;
+   border-radius: 4px;
+   cursor: pointer;
+   transition: background-color 0.3s, transform 0.2s; /* Transition effects for buttons */
+}
+
+.export-buttons button:hover {
+   background-color: #0056b3; /* Darker blue on hover */
+   transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Responsive Design Adjustments (optional)*/
+@media (max-width: 768px) {
+    .sidebar {
+        width: auto; /* Allow sidebar to shrink on smaller screens */
+        height:auto;
+        position:absolute;
+        z-index:-1;
+
+        }
+    
+        .layout{
+            flex-direction :column;
+
+        }
+}

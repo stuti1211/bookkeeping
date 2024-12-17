@@ -1,0 +1,83 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5; /* Light background color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.login-form {
+    background-color: white; /* White background for the form */
+    padding: 30px; /* Padding around the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 300px; /* Fixed width for the form */
+}
+
+h2 {
+    text-align: center; /* Centered heading */
+    color: #333; /* Dark text color */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+label {
+    font-weight: bold; /* Bold labels */
+    color: #555; /* Darker gray for labels */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding inside inputs */
+    margin-bottom: 15px; /* Space below inputs */
+    border: 1px solid #ccc; /* Light border color */
+    border-radius: 4px; /* Rounded corners for inputs */
+    font-size: 14px; /* Font size for inputs */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff; /* Blue border on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3); /* Light blue shadow on focus */
+}
+
+button {
+    width: 100%; /* Full width button */
+    padding: 10px; /* Padding inside button */
+    background-color: #007bff; /* Primary button color (Bootstrap blue) */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners for button */
+    font-size: 16px; /* Font size for button text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Transition effects for hover */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.error {
+    color: #dc3545; /* Red color for error messages (Bootstrap red) */
+    text-align: center; /* Centered error message */
+    margin-bottom: 15px; /* Space below error message */
+}
+
+/* Responsive Design Adjustments (optional)*/
+@media (max-width: 400px) {
+    .login-form {
+        width: calc(100% - 40px); /* Responsive width for smaller screens with padding adjustment */
+        padding: 20px;
+        box-shadow: none; /* Remove shadow on very small screens for simplicity */
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 0; 
+        height:auto;
+        
+   }
+}
